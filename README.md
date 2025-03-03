@@ -128,3 +128,9 @@ The evaluation is based on ROUGE metrics, with results demonstrating that:
   <img src="Rouge_Metrics.png" width="50%" alt="Animated Preview">
 </p>
 
+
+<br/>
+
+## Conclusion
+
+The fine-tuned T5 model significantly improves dialogue summarization, with the Fully Fine-Tuned Model outperforming both the PEFT Fine-Tuned Model and the Original Model. Leveraging **PEFT techniques** enhances computational efficiency while maintaining high performance. The audio transcription module further extends functionality, enabling accurate speech-to-text conversion for seamless summarization.
