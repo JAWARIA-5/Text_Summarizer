@@ -49,7 +49,7 @@ model.</li>
 <br/>
 
 <p align="center">
-  <img src="PEFT_Architecture.png" width="70%" alt="Animated Preview">
+  <img src="PEFT.png" width="50%" alt="Animated Preview">
 </p>
 
 
@@ -65,4 +65,66 @@ applications, ensuring that the language model aligns closely with human
 expectations.
 
 
+# 💬 Audio to Text
+Audio Transcription Module
+The audio transcription module processes audio inputs, identifies speakers, and generates a
+structured transcript ready for summarization.
+Components:
+ <li> Speaker Diarization : </li>
+      Identifies distinct speakers and timestamps their dialogues.
+ <li> Speech-to-Text : </li>
+      Converts audio segments into text with high accuracy.
+ <li> Audio Processing : </li>
+      Handles audio segmentation and playback during transcription.
+
+
+## **Libraries Used**
+
+### **1. PyAudio**
+   - **Purpose**: Handles live audio recording from the microphone.
+   - **Installation**:  
+     ```bash
+     pip install pyaudio
+     ```
+
+### **2. Wave**
+   - **Purpose**: Reads and writes WAV audio files.
+   - **Installation**: Built into Python; no separate installation is required.
+
+### **3. Pydub**
+   - **Purpose**: Manages audio processing tasks such as audio segmentation.
+   - **Installation**:  
+     ```bash
+     pip install pydub
+     ```
+### **4. Vosk**
+   - **Purpose**: Provides speaker diarization using a pre-trained Vosk model.
+   - **Installation**:  
+     ```bash
+     pip install vosk
+     ```
+### **5. Whisper**
+   - **Purpose**: Performs automatic speech recognition (ASR) for transcription.
+   - **Installation**:  
+     ```bash
+     pip install openai-whisper
+     ```
+   - **Dependencies**: Requires PyTorch. Install PyTorch as per your system configuration:  
+     ```bash
+     pip install torch torchvision torchaudio
+     ```
+<br/>
+
+## Performance Comparison: 
+Original Model, PEFT Fine-Tuned Model, and Fully Fine-Tuned Model
+The performance of the FLAN-T5 model was assessed across three configurations: the
+Original Model, the PEFT Fine-Tuned Model, and the Fully Fine-Tuned (Instruct) Model.
+The evaluation is based on ROUGE metrics, with results demonstrating that:
+<p align="center">
+<strong> Original Model < PEFT Fine-Tuned Model < Fully Fine-Tuned Model. </strong>
+</p>
+
+<p align="center">
+  <img src="Rouge_Metrics.png" width="50%" alt="Animated Preview">
+</p>
 
