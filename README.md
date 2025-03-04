@@ -81,30 +81,30 @@ Components:
 ## **Libraries Used**
 
 ### **1. PyAudio**
-   - **Purpose**: Handles live audio recording from the microphone.
+   -  Handles live audio recording from the microphone.
    - **Installation**:  
      ```bash
      pip install pyaudio
      ```
 
 ### **2. Wave**
-   - **Purpose**: Reads and writes WAV audio files.
+   -  Reads and writes WAV audio files.
    - **Installation**: Built into Python; no separate installation is required.
 
 ### **3. Pydub**
-   - **Purpose**: Manages audio processing tasks such as audio segmentation.
+   -  Manages audio processing tasks such as audio segmentation.
    - **Installation**:  
      ```bash
      pip install pydub
      ```
 ### **4. Vosk**
-   - **Purpose**: Provides speaker diarization using a pre-trained Vosk model.
+   -  Provides speaker diarization using a pre-trained Vosk model.
    - **Installation**:  
      ```bash
      pip install vosk
      ```
 ### **5. Whisper**
-   - **Purpose**: Performs automatic speech recognition (ASR) for transcription.
+   -  Performs automatic speech recognition (ASR) for transcription.
    - **Installation**:  
      ```bash
      pip install openai-whisper
